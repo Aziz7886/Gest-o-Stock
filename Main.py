@@ -14,9 +14,9 @@ if 'entradas' not in st.session_state:
 if 'fechos' not in st.session_state:
     st.session_state.fechos = pd.DataFrame(columns=['ID', 'Data', 'Gerente', 'Vendedor', 'Produto', 'Preço', 'St Inicial', 'Entradas', 'Quebras', 'Saldo Físico', 'Qtd Vendida', 'Valor Devido', 'Dinheiro Entregue', 'Falta_Sobra'])
 
-UTILIZADORES = {"abdul": {"nome": "Abdul Aziz (Admin)", "senha": "123", "funcao": "Admin"}, "carlos": {"nome": "Gerente Carlos", "senha": "456", "funcao": "Gerente"}}
-PRODUTOS = {"Pão Longo": 10.00, "Refresco 500ml": 25.00}
-VENDEDORES = ["Vendedor João", "Vendedor Maria", "Vendedor Ali"]
+UTILIZADORES = {"abdul": {"nome": "Abdul Aziz (Admin)", "senha": "123", "funcao": "Admin"}, "Rishad": {"nome": "Gerente Rishad", "senha": "456", "funcao": "Gerente"}}
+PRODUTOS = {"Pão Grande": 12.00, "Pão Redondo": 10.00, "Pãozinho": 5.00, "Refresco Garrafa": 25.00, "Plástico": 3.00, "Doce 1": 1.00, "Doce da Índia": 5.00, "Pastilha": 2.00, "Chupa": 2.00, "Yogueta": 5.00, "Pipoca": 5.00, "Shamussa": 6.00, "Gulabo": 5.00, "Badjia": 2.00, "Argola": 5.00, "Refresco Txoti": 30.00, "Santal 500ml": 75.00, "Ceres 500ml": 80.00, "Frozzy": 15.00, "Frozzy Energético": 25.00, "Dragon": 50.00, "Água Pequena": 20.00, "Água Grande": 50.00, "Arrofada": 5.00}
+VENDEDORES = ["Vendedor Ali"]
 
 def gerar_pdf_entrada(data_row):
     buffer = io.BytesIO()
